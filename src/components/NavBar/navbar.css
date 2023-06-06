@@ -1,0 +1,143 @@
+.header {
+  width: 100%;
+  height: 90px;
+  background: #151515;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  -webkit-box-shadow: 0 4px 6px -6px #000000;
+  -moz-box-shadow: 0 4px 6px -6px #000000;
+  box-shadow: 0 13px 6px -6px #1e1d1d;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 1rem;
+}
+
+.colors {
+  color: var(--primary);
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-menu li {
+  padding: 0 1rem;
+}
+
+.nav-menu a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #d4d4d4;
+}
+.nav-menu a:hover {
+  padding: 5px 2px;
+  border-bottom: 1px solid #25d366;
+  transition: all .3s;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item + .social__item {
+  margin-left: 15px;
+}
+
+.social__icon {
+  width: 25px;
+  height: 25px;
+}
+
+.whatsapp--icon {
+  color: #25d366;
+}
+
+.whatsapp--icon:hover {
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+.tg--icon {
+  color: #0088cc;
+}
+
+.tg--icon:hover {
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+.tel__link {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tel__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 940px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .social__list {
+    display: none;
+  }
+
+  .nav-menu {
+    position: absolute;
+    flex-direction: column;
+    justify-content: start;
+    top: 90px;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    transition: 0.4s;
+    z-index: 2;
+    background: #151515;
+    border-left: 1px solid #eee;
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: block;
+    right: 0;
+  }
+
+  .nav-menu a:hover {
+    padding: 0;
+    border: none;
+  }
+
+  .nav-menu li {
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-menu a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .social__list {
+    display: none;
+  }
+}

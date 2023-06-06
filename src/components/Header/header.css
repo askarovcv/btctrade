@@ -1,0 +1,173 @@
+
+.hero .container {
+  text-align: center;
+  height: calc(100vh - 90px);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero {
+  background: url('../../assets/images/laptop_dark2.png');
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 100px;
+}
+
+.hero h1 {
+  padding: 1rem 0;
+  font-size: 70px;
+}
+
+.hero__title {
+  cursor: pointer;
+}
+
+.hero p {
+  font-size: 17px;
+}
+
+.hero .input-container {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero .right {
+  padding: 1rem;
+}
+
+.hero .img-container {
+  width: 100%;
+  display: flex;
+}
+
+.hero img {
+  max-width: 80%;
+  margin: auto;
+}
+
+
+.whatsapp__link {
+  background-color: #15a249;
+  padding: 10px 15px;
+  border-radius: 10px 0px 10px 0px;
+  width: 300px;
+  cursor: pointer;
+  margin-right: 20px
+}
+
+.whatsapp__link:hover {
+  background-color: #25D366;
+  transition: ease-in-out .5s;
+  
+}
+
+.telegram__link {
+  background-color: #0088cc;
+  padding: 10px 15px;
+  border-radius: 10px 0px 10px 0px;
+  width: 300px;
+  cursor: pointer;
+  height: 44px;
+}
+
+.telegram__link:hover {
+  background-color: #1ab3ff;
+  transition: ease-in-out .5s;
+}
+
+@media screen and (max-width: 1060px) {
+  .header h1 {
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+
+  .nav-menu li {
+    padding: 0 0.7rem;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .hero .container {
+      grid-template-columns: 1fr;
+      margin: 1rem 0;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero .input-container {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .whatsapp__link {
+    margin-right: 20px;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .hero .right {
+    padding: 0;
+  }
+  .hero .container {
+    margin-bottom: 0;
+  }
+  .footer {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero .right {
+    padding: 0;
+  }
+  .footer {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .hero .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-top: 30px;
+  }
+
+  .whatsapp__link {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 250px;
+  }
+  .telegram__link {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero h1 {
+    font-size: 25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
