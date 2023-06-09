@@ -20,6 +20,12 @@
 .footer .col {
   display: flex;
   flex-direction: column;
+  margin-right: 35px;
+}
+
+.primary {
+  font-size: 2rem;
+  margin-right: 10px;
 }
 
 .footer .bar {

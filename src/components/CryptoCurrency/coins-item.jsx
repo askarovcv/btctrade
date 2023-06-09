@@ -11,7 +11,7 @@ const CoinItem = ({ coins }) => {
         <img className='coin__img' src={coins.image} alt='' />
         <p>{coins.name}</p>
       </div>
-      <p>${coins.current_price.toLocaleString()}</p>
+      <p className='coin-price'>${coins.current_price.toLocaleString()}</p>
       <p className={percentage24h < 0 ? 'negative_percentage' : 'percentage'}>{percentage24h}%</p>
       <p className={percentage7d < 0 ? 'hide-mobile negative_percentage' : 'hide-mobile percentage'}>{percentage7d}%</p>
       <p className='hide-mobile'>{format(new Date(coins.last_updated), 'dd.MM.yyyy hh:mm') }</p>

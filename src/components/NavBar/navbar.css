@@ -41,7 +41,7 @@
   color: #d4d4d4;
 }
 .nav-menu a:hover {
-  padding: 5px 2px;
+  padding: 5px 0px;
   border-bottom: 1px solid #25d366;
   transition: all .3s;
 }
@@ -121,7 +121,6 @@
   }
 
   .nav-menu a:hover {
-    padding: 0;
     border: none;
   }
 

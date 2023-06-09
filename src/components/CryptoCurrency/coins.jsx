@@ -9,9 +9,9 @@ export const Coins = ({ coins }) => {
     <div className='coins__inner' id='coins'>
       <div className='heading'>
         <p className='coin-name'>Монета</p>
-        <p>Цена</p>
-        <p>% / 1 день</p>
-        <p className='hide-mobile'>% / 7 дней</p>
+        <p className='coin-price'>Цена</p>
+        <p className='day-percent'>% / 1 день</p>
+        <p className='week_percent hide-mobile'>% / 7 дней</p>
         <p className='hide-mobile'>Дата</p>
       </div>
       {coins.map(coins => {
